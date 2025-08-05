@@ -52,7 +52,7 @@ class MainScreen : Screen {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = {
                 navigator.push(SecondScreen())
-            }) { Text(text="Navegacion bb") }
+            }) { Text(text="Navegacion dasdad") }
         }
 
     }
