@@ -27,6 +27,7 @@ fun App() {
     }
 }
 
+
 class MainScreen : Screen {
     @Composable
     override fun Content() {
@@ -35,7 +36,7 @@ class MainScreen : Screen {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = {
                 navigator.push(SecondScreen())
-            }) { Text(text="Navigation ") }
+            }) { Text(text="Navegacion dasdada") }
         }
 
     }
@@ -48,7 +49,7 @@ class SecondScreen : Screen {
             modifier = Modifier.fillMaxSize().background(Color.Blue),
             contentAlignment = Alignment.Center
         ) {
-            Text(text= "Segundo pantalla", fontSize = 26.sp, color = Color.White)
+            Text(text= "Segunda pantalla", fontSize = 26.sp, color = Color.White)
         }
     }
 }
