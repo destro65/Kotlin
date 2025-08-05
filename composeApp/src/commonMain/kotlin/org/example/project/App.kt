@@ -35,7 +35,7 @@ class MainScreen : Screen {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = {
                 navigator.push(SecondScreen())
-            }) { Text(text="Navegacion dasdada") }
+            }) { Text(text="Navigation ") }
         }
 
     }
@@ -48,7 +48,7 @@ class SecondScreen : Screen {
             modifier = Modifier.fillMaxSize().background(Color.Blue),
             contentAlignment = Alignment.Center
         ) {
-            Text(text= "Segunda pantalla", fontSize = 26.sp, color = Color.White)
+            Text(text= "Segundo pantalla", fontSize = 26.sp, color = Color.White)
         }
     }
 }
