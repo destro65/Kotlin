@@ -1,6 +1,7 @@
 package org.example.project
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -45,11 +46,12 @@ class MainScreen : Screen {
 class SecondScreen : Screen {
     @Composable
     override fun Content() {
-        Box(
+        val navigator : Navigator = LocalNavigator.currentOrThrow
+        Column(
             modifier = Modifier.fillMaxSize().background(Color.Blue),
-            contentAlignment = Alignment.Center
+            verticalArrangement = Arrangement.SpaceAround
         ) {
             Text(text= "Segunda pantalla", fontSize = 26.sp, color = Color.White)
-        }
+            Button(onClick = {navigator.pop()}){ Text(text = "Volver")}}
     }
 }
